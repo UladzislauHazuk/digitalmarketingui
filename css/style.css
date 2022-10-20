@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url(../fonts/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header nav .img-nav {
+  background-image: url(../img/img-header.svg);
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 32px;
+  padding-right: 20px;
+}
+body header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header nav ul li {
+  padding-left: 40px;
+}
+body header nav ul li:hover {
+  color: #d209dd;
+}
+body header .btn {
+  background: #0057FF;
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 14px 40px;
+}
+body header .btn:hover {
+  background-color: #d209dd;
+  cursor: pointer;
+}
+body main {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .left-side .img-main {
+  background-image: url(../img/img-main.svg);
+  background-repeat: no-repeat;
+  width: 540px;
+  height: 589px;
+  position: relative;
+  margin-top: 45px;
+}
+body main .left-side .img-main-2 {
+  background-image: url(../img/img-main-2.svg);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 13%;
+  bottom: 13%;
+}
+body main .right-side {
+  margin-left: 120px;
+}
+body main .right-side h1 {
+  width: 450px;
+  font-size: 40px;
+}
+body main .right-side p {
+  font-family: "Roboto";
+  font-size: 15px;
+  width: 480px;
+  margin-top: 50px;
+}
+body main .right-side .form {
+  margin: 60px 0 0 0px;
+  padding: 0 30px 0 50px;
+  border: 0.5px solid gray;
+  border-radius: 10px;
+}
+body main .right-side .form .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .right-side .form .question p {
+  margin: 30px 0;
+}
+body main .right-side .form .question .img-plus {
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
