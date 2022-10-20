@@ -122,21 +122,15 @@ body {
                 padding: 0 30px 0 50px;
                 border: 0.5px solid gray;
                 border-radius: 10px;
-                
-                .first-question,
-                .second-question,
-                .third-question,
-                .fourth-question {
+
+                ul {
                     position: relative;
-                    
-                    ul {
-                        margin: 30px 0;
-                    }
+                    margin: 30px 0;
 
                     li {
                         width: 300px;
                         font-size: 14px;
-                        padding-bottom: 20px;
+                        padding-top: 20px;
                     }
 
                     .img-plus {
@@ -150,13 +144,13 @@ body {
                     }
 
                     .img-min {
-                        background-image: url(../img/min.svg); 
+                        background-image: url(../img/min.svg);
                         background-repeat: no-repeat;
                         width: 25px;
                         height: 25px;
                         position: absolute;
-                        right: 0;
-                        top: 20%;
+                        right: -1%;
+                        top: 8%;
                     }
                 }
             }
