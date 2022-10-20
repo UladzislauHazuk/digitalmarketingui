@@ -22,6 +22,10 @@ a {
     color: #000000;
 }
 
+li {
+    list-style-type: none;
+}
+
 body {
     width: 1200px;
     margin: auto;
@@ -119,12 +123,20 @@ body {
                 border: 0.5px solid gray;
                 border-radius: 10px;
                 
-                .question {
-                    display: flex;
-                    align-items: center;
+                .first-question,
+                .second-question,
+                .third-question,
+                .fourth-question {
+                    position: relative;
                     
-                    p {
+                    ul {
                         margin: 30px 0;
+                    }
+
+                    li {
+                        width: 300px;
+                        font-size: 14px;
+                        padding-bottom: 20px;
                     }
 
                     .img-plus {
@@ -132,7 +144,19 @@ body {
                         background-repeat: no-repeat;
                         width: 25px;
                         height: 25px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
 
+                    .img-min {
+                        background-image: url(../img/min.svg); 
+                        background-repeat: no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        right: 0;
+                        top: 20%;
                     }
                 }
             }

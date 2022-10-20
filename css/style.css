@@ -18,6 +18,10 @@ a {
   color: #000000;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   width: 1200px;
   margin: auto;
@@ -115,20 +119,47 @@ body main .right-side .form {
   border: 0.5px solid gray;
   border-radius: 10px;
 }
-body main .right-side .form .question {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body main .right-side .form .first-question,
+body main .right-side .form .second-question,
+body main .right-side .form .third-question,
+body main .right-side .form .fourth-question {
+  position: relative;
 }
-body main .right-side .form .question p {
+body main .right-side .form .first-question ul,
+body main .right-side .form .second-question ul,
+body main .right-side .form .third-question ul,
+body main .right-side .form .fourth-question ul {
   margin: 30px 0;
 }
-body main .right-side .form .question .img-plus {
+body main .right-side .form .first-question li,
+body main .right-side .form .second-question li,
+body main .right-side .form .third-question li,
+body main .right-side .form .fourth-question li {
+  width: 300px;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+body main .right-side .form .first-question .img-plus,
+body main .right-side .form .second-question .img-plus,
+body main .right-side .form .third-question .img-plus,
+body main .right-side .form .fourth-question .img-plus {
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body main .right-side .form .first-question .img-min,
+body main .right-side .form .second-question .img-min,
+body main .right-side .form .third-question .img-min,
+body main .right-side .form .fourth-question .img-min {
+  background-image: url(../img/min.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 20%;
 }
